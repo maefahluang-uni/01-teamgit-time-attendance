@@ -26,17 +26,17 @@ public class Counter {
 	public void multiplyBy(int multiplier) {
 		_multiplier = multiplier; // no fault here
 		_ctr = _ctr * _multiplier; // no fault here
-	}
+	}/*อันนี้เปลี่ยนเป็นคูน */
 
 	// TODO: dev1- method for increment to closest even number
 	public void incrementToEven() {
 		_ctr = -99;
-	}
+	}/*อันนี้+2มั้ง? */
 
 	// TODO: dev1- method for decrement to closest even number
 	public void decrementToEven() {
 		_ctr = -99;
-	}
+	}/*อันนี้-2มั้ง */
 
 	// TODO: dev2- method for increment to closest prime number
 	public void incrementToPrime() {
