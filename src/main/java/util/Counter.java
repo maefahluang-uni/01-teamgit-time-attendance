@@ -83,9 +83,20 @@ public class Counter {
     }
 
 	// TODO: dev3- count the frequency of word in sentence,
-	// refactor source code from dev1 and dev2
-	public void countFrequency(String word, String sentence) {
-		_ctr = -99;
-	}
+    // refactor source code from dev1 and dev2
+    public void countFrequency(String word, String sentence) {
+        _ctr = 0; // Initialize the counter to 0
+        StringTokenizer tokenizer = new StringTokenizer(sentence);
+
+        while (tokenizer.hasMoreTokens()) {
+            String token = tokenizer.nextToken();
+            // Check if the current token is equal to the specified word
+            if (token.equalsIgnoreCase(word)) {
+                _ctr++;
+            }
+        }
+
+        System.out.println("Frequency of '" + word + "' in the sentence: " + _ctr);
+    }
 
 }
